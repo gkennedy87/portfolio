@@ -254,12 +254,28 @@ ul {
     background-color: var(--secondary);
 }
 
+@media only screen and (min-width:800px) {
+    .btn {
+        border: 4px solid var(--primary);
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
 .btn-lg {
     border: 4px solid var(--primary);
     border-radius: 50px;
     padding: 15px;
     font-size: 1.3rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .btn-lg:hover {
@@ -370,6 +386,7 @@ ul {
 .p-img {
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 10px;
 
 }
 
@@ -393,6 +410,10 @@ ul {
         padding-left:  100px;
         padding-right: 100px;
     }
+
+    .p-image {
+        width: 50%;
+    }
 }
 
 /*
@@ -411,6 +432,7 @@ ul {
     padding: 0;
     margin: 10px;
     margin-top: 50px;
+    max-width: 800px;
 }
 
 .profile-img {
@@ -434,6 +456,16 @@ ul {
     align-content: center;
 }
 
+.tech-container {
+        margin: 20px;
+        padding: 8px 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+}
+
 .tech-card {
     width: 320px;
     display: flex;
@@ -442,10 +474,9 @@ ul {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 6px;
-    border: 1px solid var(--primary);
+    margin: 5px;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
 }
 
 .tech-card-title {
@@ -458,6 +489,7 @@ ul {
     font-size: 14px;
     padding: 5px;
     color: white;
+    height: 30px;
 }
 
 .tech-card-body {
@@ -466,6 +498,7 @@ ul {
     flex-wrap: wrap;
     -ms-flex-direction: row;
     -ms-flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .tech-card-tech {
@@ -475,4 +508,60 @@ ul {
     align-items: center;
     margin: 5px;
     font-size: 64px;
+}
+
+.devicons-html5 {
+    color: orange;
+}
+
+.devicons-javascript {
+    
+}
+
+.devicons-react {
+    color: black;
+}
+
+/* CV Section Styles */
+
+.cv-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cv-btn-container a {
+    margin-left: 1rem;
+}
+
+/* Contact Section Styles */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+
+}
+
+form input, textarea {
+    border:none;
+    border-style: none;
+    border-image: none;
+    border-color: none;
+    border-bottom: 2px solid var(--primary);
+    margin: 6px;
+    margin-top
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 3rem;
+}
+
+form button {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 4rem;
+    justify-self: center;
 }

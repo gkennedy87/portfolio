@@ -79,33 +79,99 @@
                 </p>
             </div>
         </div>
-        <h3>My Skills</h3>
-        <div class="tech-card">
-            <div class="tech-card-title">
-                <h4>Frontend</h4>
+        <h2>My Skills & Tools</h2>
+        <div class="tech-container">
+            
+            <div class="tech-card">
+                <div class="tech-card-title">
+                    <h4>Frontend</h4>
+                </div>
+                <div class="tech-card-body">
+                    <span class="tech-card-tech devicons devicons-html5"></span>
+                    <span class="tech-card-tech devicons devicons-css3"></span>
+                    <span class="tech-card-tech"><img class="tech-card-tech" src="assets/logos/React-icon.svg" alt=""></span>
+                    <span class="tech-card-tech devicons devicons-bootstrap"></span>
+                    <span class="tech-card-tech devicons devicons-sass"></span>
+                </div>
             </div>
-            <div class="tech-card-body">
-                <span class="tech-card-tech devicons devicons-html5"></span>
-                <span class="tech-card-tech devicons devicons-css3"></span>
-                <span class="tech-card-tech devicons devicons-javascript"></span>
-                <span class="tech-card-tech devicons devicons-react"></span>
-                <span class="tech-card-tech devicons devicons-bootstrap"></span>
-                <span class="tech-card-tech devicons devicons-sass"></span>
+            <div class="tech-card">
+                <div class="tech-card-title">
+                    <h4>Backend</h4>
+                </div>
+                <div class="tech-card-body">
+                    <span class="tech-card-tech devicons devicons-laravel"></span>
+                    <span class="tech-card-tech devicons devicons-mysql"></span>
+                    <span class="tech-card-tech devicons devicons-nodejs"></span>
+                    <span class="tech-card-tech devicons devicons-wordpress"></span>
+                    <img  class="tech-card-tech" src="assets/logos/Expressjs.png" alt="">
+                    <span class="tech-card-tech devicons devicons-mongodb"></span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-title">
+                    <h4>Devops</h4>
+                </div>
+                <div class="tech-card-body">
+                    <span class="tech-card-tech devicons devicons-github_badge"></span>
+                    <span class="tech-card-tech devicons devicons-npm"></span>
+                    <span class="tech-card-tech devicons devicons-heroku"></span>
+                    <span class="tech-card-tech devicons devicons-git"></span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-title">
+                    <h4>Languages</h4>
+                </div>
+                <div class="tech-card-body">
+                    <span class="tech-card-tech devicons devicons-javascript_badge"></span>
+                    <span class="tech-card-tech devicons devicons-php"></span>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-title">
+                    <h4>Tools</h4>
+                </div>
+                <div class="tech-card-body">
+                    <span class="tech-card-tech devicons devicons-html5"></span>
+                    <span class="tech-card-tech devicons devicons-css3"></span>
+                    <span class="tech-card-tech devicons devicons-javascript"></span>
+                    <span class="tech-card-tech devicons devicons-react"></span>
+                    <span class="tech-card-tech devicons devicons-bootstrap"></span>
+                    <span class="tech-card-tech devicons devicons-sass"></span>
+                </div>
             </div>
         </div>
-
     </section>
     <section id="cv">
         <div>
             <h1 class="section-title">Curriculum Vitae</h1>
+        </div>
+        <div class="container">
+            <div class="cv-btn-container">
+                <a class="btn-lg" href="#">View CV</a>
+                <a class="btn-lg" href="#" download="Grant Kennedy CV">Download CV</a> 
+            </div>
+            
         </div>
     </section>
     <section id="contact">
         <div>
             <h1 class="section-title">Contact Me</h1>
         </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="hidden">
+                <input id="name" name="name" type="text" placeholder="Your name">
+                <input id="email" name="email" type="email" placeholder="Your email">
+                <textarea id="msg" name="msg" rows="4" cols="50" placeholder="Your Message"></textarea>
+                <button id="submit-btn" type="button" onclick="console.log('this is working')" value="Send">Send</button>
+            </form>
+        </div>
     </section>
-    <footer>Footer</footer>
+    <footer>
+        Footer
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
