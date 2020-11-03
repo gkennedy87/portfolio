@@ -1,3 +1,14 @@
+/* 
+Author: Grant Kennedy
+Author URL: www.gmkennedy.com
+
+Copyright 2020
+
+Notes: This site is designed mobile first. The breakpoint is set to min-width 800px.
+Media queries for each element can be found under the default stylings for each element,
+ex. desktop navbar comes after default mobile-first navbar.
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +20,7 @@
 :root {
 --primary: #333;
 --secondary: rgba(0, 214, 218,1);
-
+--shadow: rgba(0, 0,0, 0.2)
 }
 
 /* General Mobile-first Styles */
@@ -33,7 +44,7 @@ section {
 }
 
 a {
-    color: black;
+    color: var(--primary);
     cursor: pointer;
 }
 
@@ -45,7 +56,20 @@ h1 {
     font-size: 3rem;
 }
 
-/* Mobile First Navbar */
+h1, h2 {
+    color: var(--primary);
+}
+
+/* General Utility Classes */
+.section-title {
+    padding-top: 100px;
+}
+
+/* 
+*
+Mobile First Navbar 
+*
+*/
 
 nav {
     display: flex;
@@ -62,7 +86,7 @@ nav {
 
 .navbar-logo {
     margin: 10px;
-    border: 4px solid black;
+    border: 4px solid var(--primary);
     width: 50px;
     height: 50px;
     font-size: 2rem;
@@ -90,7 +114,7 @@ ul {
     width: 40%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--primary);
     background-color: white;
 }
 
@@ -112,7 +136,7 @@ ul {
 .bar-1, .bar-2, .bar-3 {
     width: 35px;
     height: 5px;
-    background-color: #333333;
+    background-color: var(--primary);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -177,6 +201,7 @@ ul {
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
+    color: var(--primary);
 }
 
 .hero h1 {
@@ -331,6 +356,9 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
 }
 
 /* .p-card:hover {
@@ -356,4 +384,95 @@ ul {
 .p-links a {
     margin-left: 10px;
     margin-bottom: 20px;
+}
+
+/* Responsive Portfolio Styles */
+
+@media only screen and (min-width:800px) {
+    .p-card {
+        padding-left:  100px;
+        padding-right: 100px;
+    }
+}
+
+/*
+    About Me Section
+*/
+
+#about-title {
+    padding-top: 100px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.profile-img {
+    border-radius: 30% 0 30% 0;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    transition: 0.3s;
+    margin-bottom: 5px ;
+    border: 4px solid var(--primary);
+}
+
+.profile-img:hover {
+    box-shadow: 0 8px 16px 0 var(--shadow);
+}
+.container {
+    margin: 20px;
+    padding: 8px 16px;
+    display: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tech-card {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 6px;
+    border: 1px solid var(--primary);
+}
+
+.tech-card-title {
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+}
+
+.tech-card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+}
+
+.tech-card-tech {
+    width: 64px;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 64px;
 }
