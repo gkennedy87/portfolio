@@ -1,0 +1,42 @@
+.icon {
+  display: flex;
+  margin: 5px;
+  width: 64px;
+  max-height: 64px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.helper-icon {
+    display: inherit;
+    width: 1em;
+    max-height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    align-self: center;
+    margin:5px;
+}
+
+.social-links {
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    align-self: center;
+    margin:5px 10px;
+}
+
+.social-links:hover {
+  color: var(--secondary);
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
