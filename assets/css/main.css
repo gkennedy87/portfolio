@@ -312,6 +312,10 @@ ul {
 
 .hero-btn {
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
 }
 
 /* Responsive styles for Hero section */
@@ -356,8 +360,8 @@ ul {
 @media only screen and (min-width:800px) {
     .btn {
         border: 2px solid var(--primary);
-        border-radius: 50px;
-        padding: 15px;
+        border-radius: 15px;
+        padding: 5px 10px;
         font-size: 1.3rem;
         font-weight: bold;
         display: flex;
@@ -540,6 +544,10 @@ ul {
     align-content: center;
     justify-content: center;
     gap: 12px;
+}
+
+#otherProjects li a{
+    border-bottom: 1px solid var(--primary);
 }
 
 
